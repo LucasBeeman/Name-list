@@ -1,0 +1,25 @@
+﻿<Window x:Class="Name_list.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Name_list"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="180" Width="260">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Movies:" />
+        <ListBox x:Name="list" Grid.Row="1" />
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,0,0,0">
+            <TextBox x:Name="txtName" />
+            <Button x:Name="btnAdd" Margin="0,5,0,0" Content="Add Movie" />
+        </StackPanel>
+    </Grid>
+</Window>
