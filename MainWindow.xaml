@@ -19,7 +19,7 @@
         <ListBox x:Name="list" Grid.Row="1" />
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,0,0,0">
             <TextBox x:Name="txtName" />
-            <Button x:Name="btnAdd" Margin="0,5,0,0" Content="Add Movie" />
+            <Button x:Name="btnAdd" Margin="0,5,0,0" Content="Add Movie" Click="btnAdd_Click" />
         </StackPanel>
     </Grid>
 </Window>

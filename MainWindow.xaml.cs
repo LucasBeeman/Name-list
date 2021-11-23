@@ -25,5 +25,13 @@ namespace Name_list
             InitializeComponent();
         }
 
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtName.Text) && !list.Items.Contains(txtName.Text))
+            {
+                list.Items.Add(txtName.Text);
+                txtName.Clear();
+            }
+        }
     }
 }
